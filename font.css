@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+.lefttop{
+    font-size: 12px;
+}
+
+
+.profilemention{
+    font-family: 'Yeongdo-Rg';
+    font-size:24px;
+}
+
+
+.cate1left{
+    line-height:1.5;    
+    text-align: center;
+    color:#ffffff;
+    font-weight: 900;
+}
+
+
+.mini {
+    color: #3794b0; 
+    font-weight: 900;
+    line-height: 10px;
+}
+
+
+.profilebottom .coding {
+    font-family: 'Yeongdo-Rg';
+    font-size:24px;
+    text-align:center;
+    
+}
+
+
+.update{
+    color: #3794b0; 
+    font-weight: 900;
+    line-height: 10px;  
+}
+
+
+.coding{
+    color:#144b8f;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.lefttop{
+    font-size: 12px;
+}
+
+
+.profilemention{
+    font-family:  'Yeongdo-Rg';
+    font-size  :24px;
+}
+
+
+.cate1left{
+    line-height:1.5;    
+    text-align: center;
+    color:#ffffff;
+    font-weight: 900;
+}
+
+
+.mini {
+    color: #3794b0; 
+    font-weight: 900;
+    line-height: 10px;
+}
+
+
+.profilebottom .coding {
+    font-family: 'Yeongdo-Rg';
+    font-size:24px;
+    text-align:center;
+    
+}
+
+
+.update{
+    color: #3794b0; 
+    font-weight: 900;
+    line-height: 10px;  
+}
+
+
+.coding{
+    color:#144b8f;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+span{
+    font-family: 'Yeongdo-Rg';
+}
+
+.write{
+    font-family: 'Yeongdo-Rg';
+}
+
+.main{
+    font-family: 'Yeongdo-Rg';
+}

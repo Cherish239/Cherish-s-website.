@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2022 cherish HOMEPAGE</title>
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./다이어리.css" />
+    <script src="https://kit.fontawesome.com/41c1b220c6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+        <div class="container">
+            <div class="left">
+              <div class="first">
+                <span class="lefttop">
+                TODAY 
+                <font color="#f74545">15</font>
+                | TOTAL 2489123
+                </span>
+              </div>
+              <div class="profile">
+                <div class="profileimg"></div>
+                <div class="profilemention">
+                 <br>
+                 영도체
+                </div>
+                <div class="profilebottom">
+                  <p class="coding">
+                  cherish (♂)
+                  </p>
+                  <div class="dropdown">
+                    <button class="dropbt">
+                      <span>파도타기</span>
+                      <span>&nbsp;&nbsp;▼</span>
+                    </button>
+                    <ul class="dropdown-content" >
+                      <li><a href="https://github.com/Cherish239" target='_blank'>깃허브</a></li>
+                        <li><a href="https://cafe.naver.com/codeuniv?iframe_url=/MyCafeIntro.nhn%3Fclubid=30026525"
+                            target='_blank'>코뮤니티</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center">
+                <div class="title">
+                    <div class="m">cherish 싸이월드</div>
+                    <div class="address"> https://url주소/나중에입력</div>
+                </div>
+
+
+                <div class="main">
+                    <div class="calendar">
+                        <div class="month"> 02.30<br> SUN </div>
+                        <div class="date">
+                            <table>
+                                <tr>
+                                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="sat">6</td><td class="sun">7</td>
+                                <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="sat">13</td><td class="sun">14</td>
+                                <td>15</td><td>16</td><td>17</td><td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td><td class="sat">20</td><td class="sun">21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                                    <td>25</td><td class="sat">27</td><td class="sun">28</td><td>29</td><td>30</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="diaryform">
+                      <div class="writeform"> 
+                        <div class="day">
+                            2022.03.13. 일 01:29
+                        </div>  
+                        <div class="write">
+                          오늘은 일요일이다...<br>
+                          내일이며 학교를 가야한다<br>
+                          슬프다ㅠㅠ.<br>
+                        </div>  
+                      </div>
+                      <div class="writeform">
+                        <div class="day"> 
+                          2022.03.14. 월 09:49
+                        </div>  
+                        <div class="write">
+                          월요일이다. 쓸게 없는ㄷ....
+                          </div>  
+                      </div>
+                      <div class="writeform"> 
+                        <div class="day"> 
+                          2022.03.15. 화 09:49
+                        </div>  
+                        <div class="write">
+                          코딩을 했다<br>
+                          백준도 풀어 봤다<br>
+                          백준은 어렵다ㅠㅠ<br>
+                        </div> 
+                      </div>
+                      <div class="secret"> 
+                        <button class="diary-button" onclick="getTextFile()">
+                        <i class="fa-solid fa-unlock"></i>나의 비밀일기
+                        </button>
+                      </div>
+                      <div class="diary-box" id="secret-box">
+                        <div class="diary-date"></div>
+                        <div class="diary-content" id="secret-diary"></div>
+                      </div>
+                     </div>
+                </div>
+            </div>
+            <div class="menubar">
+              <div id="home"><a href="./asd.html">홈</a></div>
+              <div id="diary"><a href="./다이어리.HTML">다이어리</a></div>
+              <div id="photo"><a href="./photo.html">사진첩</a></div>
+              <div id="guestbook"><a href="./방명록.html">방명록</a></div>
+            </div>
+            </div>
+    </div>
+    </div>
+      </div>
+    </div>
+    <script>
+      function getTextFile() {
+      var input = document.createElement("input");
+      input.type = "file";
+      input.accept = "text/plain";
+      input.onchange = function (event) {
+        processFile(event.target.files[0]);
+      };
+      input.click();
+    }
+
+
+    function processFile(file) {
+      var reader = new FileReader();
+      reader.readAsText(file, "utf-8");
+      reader.onload = function () {
+        document.getElementById("secret-diary").innerText = reader.result;
+        document.getElementById("secret-box").style.display = "block";
+      };
+    }
+    </script>
+  </body>
+</html>
